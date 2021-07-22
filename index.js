@@ -13,7 +13,7 @@ app.post('/newapi/project',async (req,res)=>{
     })
     
     {
-        if(validator.validate(email))
+        if(validator.validate(product.email))
        {
            await product.save();
            return res.status(201).send(product);
