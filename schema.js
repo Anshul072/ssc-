@@ -13,6 +13,10 @@ const productSchema =new Schema({
         type:String,
         minlength:2,
         required:true,
+    },
+    date:{
+        type: Date,
+        default:Date.now,
     }
 })
 
